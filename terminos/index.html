@@ -130,7 +130,32 @@ Estos Términos y Condiciones se rigen por las leyes de
                         en los tribunales de la Ciudad Autónoma de Buenos Aires.
 </p> </section> <section> <h2 class="text-2xl font-bold text-white mb-4">
 12. Contacto
-</h2> <p>Para consultas sobre estos Términos y Condiciones:</p> <ul class="list-none space-y-2 mt-4"> <li> <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5491172383806&text=Hola%20AlbornozObras%2C%20quisiera%20consultar%20por%20un%20trabajo" class="text-orange-500 hover:underline">+54 9 11 7238-3806</a> </li> <li> <strong>Ubicación:</strong> CABA y GBA, Argentina
+</h2> <p>Para consultas sobre estos Términos y Condiciones:</p> <ul class="list-none space-y-2 mt-4"> <li> <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5491172383806&text=Hola%20AlbornozObras%2C%20quisiera%20consultar%20por%20un%20trabajo" data-cta-type="whatsapp" data-cta-location="legal" class="text-orange-500 hover:underline">+54 9 11 7238-3806</a> </li> <li> <strong>Ubicación:</strong> CABA y GBA, Argentina
 </li> </ul> </section> </div> <div class="mt-12 pt-8 border-t border-slate-700"> <a href="/" class="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"> <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path> </svg>
 Volver al inicio
-</a> </div> </div> </main>  </body></html>
+</a> </div> </div> </main> <script>
+/* NRVERTEX tracking oportunidades AlbornozObras — página legal.
+   Envía a GA4 el evento + sección exacta en cada click WhatsApp/teléfono. */
+(function () {
+  if (document.__ctaTrackingInit) return;
+  document.__ctaTrackingInit = true;
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener("click", function (e) {
+    var el = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!el) return;
+    var href = el.getAttribute("href") || "";
+    var isWA = href.indexOf("whatsapp.com") !== -1 || href.indexOf("wa.me") !== -1;
+    var isTel = href.indexOf("tel:") === 0;
+    if (!isWA && !isTel) return;
+    var loc = el.getAttribute("data-cta-location") || "legal";
+    var txt = (el.textContent || "").replace(/\s+/g, " ").trim().slice(0, 60);
+    var path = window.location.pathname;
+    window.dataLayer.push({event: "cta_click", cta_type: isWA ? "whatsapp" : "call", cta_location: loc, cta_text: txt, destination: href, page_path: path});
+    try {
+      if (typeof gtag === "function") {
+        gtag("event", isWA ? "generate_lead_whatsapp" : "click_call", {cta_location: loc, cta_text: txt, destination: href, page_path: path});
+      }
+    } catch (err) {}
+  }, true);
+})();
+</script> </body></html>
