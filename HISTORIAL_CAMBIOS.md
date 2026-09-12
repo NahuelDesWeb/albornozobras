@@ -19,3 +19,9 @@
 - Re-subida de la carpeta entera (113 archivos, zip 13.99MB) con el mismo contenido de tracking, a pedido (método manual habitual).
 - Verificado: el `index.html` en vivo es byte-idéntico al local (SHA1 coincidente) y el deploy quedó publicado como producción.
 - Estructura validada: 9/9 secciones, divs y scripts balanceados, JS validado con `node --check` en las 3 páginas.
+
+## 2026-09-11 23:20 ART — ROLLBACK a deploy `6aa34b8b` (producción)
+**Qué pasó:** la landing se veía vacía/rota en el navegador después de los deploys con tracking.
+**Qué se hizo:** restore al deploy anterior (11/09 00:30) vía API. Verificado en vivo: versión original servida (109755 bytes, sin tracking).
+**Lección:** los cambios con scripts se prueban primero en URL preview, recién después van a producción.
+**Estado:** tracking a salvo en GitHub (rama `feat/tracking-cta-exacto` + `main`). Producción intacta como antes.
