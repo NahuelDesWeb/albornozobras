@@ -25,3 +25,9 @@
 **Qué se hizo:** restore al deploy anterior (11/09 00:30) vía API. Verificado en vivo: versión original servida (109755 bytes, sin tracking).
 **Lección:** los cambios con scripts se prueban primero en URL preview, recién después van a producción.
 **Estado:** tracking a salvo en GitHub (rama `feat/tracking-cta-exacto` + `main`). Producción intacta como antes.
+
+## 2026-09-11 23:29 ART — Deploy `6aa4b921c2d4c668cb354b5b` (producción, CARPETA COMPLETA)
+**Qué cambió:** solo snippet `GTM-NLJH9QCG` instalado en las 3 páginas (head + noscript). Nada más: sin eventos, sin cambios de tags viejos, sin diseño tocado.
+**Verificación previa:** probado en staging `albornozobras.netlify.app` con OK visual del cliente.
+**Verificación en vivo:** GTM nuevo presente, 9 secciones, sin restos de tracking.
+**Pendiente del cliente en GTM:** apretar Enviar/Publicar el contenedor (aunque esté vacío) para activarlo.
