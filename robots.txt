@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://albornozobras.com.ar/sitemap-index.xml

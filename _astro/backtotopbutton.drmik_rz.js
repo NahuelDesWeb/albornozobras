@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime.D_zvdyIk.js";import{r as i}from"./index.D55ewHcJ.js";import{A as n,m as a}from"./proxy.DjIJUkA4.js";import{c as l}from"./createLucideIcon.6_u5YtU5.js";/**
+ * @license lucide-react v0.554.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=[["path",{d:"m5 12 7-7 7 7",key:"hav0vg"}],["path",{d:"M12 19V5",key:"x0mq9r"}]],d=l("arrow-up",c),w=()=>{const[s,t]=i.useState(!1);i.useEffect(()=>{const o=()=>{window.scrollY>500?t(!0):t(!1)};return window.addEventListener("scroll",o),()=>window.removeEventListener("scroll",o)},[]);const r=o=>{o.preventDefault(),window.lenis?window.lenis.scrollTo(0,{duration:1.2}):window.scrollTo({top:0,behavior:"smooth"})};return e.jsx(n,{children:s&&e.jsx(a.button,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.8},transition:{type:"spring",stiffness:260,damping:20},whileHover:{scale:1.1,y:-2},whileTap:{scale:.9},onClick:r,className:"fixed bottom-6 right-6 z-40 p-3 bg-[#FF5E13] text-white rounded-full shadow-lg hover:bg-[#E04D10] focus:outline-none focus:ring-2 focus:ring-[#FF5E13] focus:ring-offset-2 transition-colors border border-white/20","aria-label":"Volver arriba",children:e.jsx(d,{size:24,strokeWidth:2.5})})})};export{w as default};

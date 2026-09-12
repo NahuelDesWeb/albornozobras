@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" fill="none">
+  <!-- Symbol: Stylized Building/A Structure -->
+  <g transform="translate(0, 10)">
+    <!-- Left Pillar -->
+    <path d="M15 60 L15 30 L25 20 L25 60 Z" fill="white" />
+    
+    <!-- Middle Left Pillar -->
+    <path d="M30 60 L30 15 L40 5 L40 60 Z" fill="white" />
+    
+    <!-- Middle Right Pillar -->
+    <path d="M45 60 L45 15 L55 5 L55 60 Z" fill="white" />
+    
+    <!-- Right Pillar / Roof Extension -->
+    <path d="M60 60 L60 30 L85 22 L85 28 L60 36 Z" fill="white" />
+    
+    <!-- Horizontal Crossbar (The "A" crossbar effect) -->
+    <path d="M20 45 L75 28" stroke="white" stroke-width="6" stroke-linecap="square" />
+    
+    <!-- Base Line -->
+    <rect x="10" y="62" width="70" height="3" fill="white" />
+  </g>
+
+  <!-- Text: Albornoz -->
+  <text x="100" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="42" fill="white">Albornoz</text>
+  
+  <!-- Text: Obras -->
+  <text x="295" y="55" font-family="Arial, sans-serif" font-weight="normal" font-size="42" fill="white">Obras</text>
+</svg>
