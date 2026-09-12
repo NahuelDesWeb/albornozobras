@@ -13,3 +13,9 @@
 **Commits GitHub (rama `main`):** `f54cf91` (respaldo inicial) → `001df2f` (tracking) → `5a8f615` (GTM-NLJH9QCG) → `d3201d8` (merge).
 **Deploy Netlify:** manual por API (solo se subieron los 3 HTML cambiados), título con fecha/hora, estado `ready` y publicado como deploy de producción.
 **Pendiente del lado del cliente:** marcar los 2 eventos como clave en GA4 + crear dimensiones `cta_location` y `cta_text` + prueba en Tiempo real.
+
+## 2026-09-11 23:11 ART — Deploy `6aa4b4f2fc4c3e63c01da86c` (producción, CARPETA COMPLETA)
+**Qué cambió:**
+- Re-subida de la carpeta entera (113 archivos, zip 13.99MB) con el mismo contenido de tracking, a pedido (método manual habitual).
+- Verificado: el `index.html` en vivo es byte-idéntico al local (SHA1 coincidente) y el deploy quedó publicado como producción.
+- Estructura validada: 9/9 secciones, divs y scripts balanceados, JS validado con `node --check` en las 3 páginas.
